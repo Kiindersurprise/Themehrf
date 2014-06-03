@@ -1,0 +1,35 @@
+<style type="text/css" >
+	body {
+		background-color: ;
+		background: url("../images/shen.png") bottom left no-repeat,
+	url("../images/zed.png") bottom right no-repeat ;
+	}
+	
+	.navbar-inverse .nav-justified > .active > a,
+	.navbar-inverse .nav-justified > .active > a:hover,
+	.navbar-inverse .nav-justified > .active > a:focus,
+	.navbar-inverse .nav-justified > .active > a:active,
+	.navbar-inverse .nav-justified > li > a:hover,
+	.navbar-inverse .nav-justified > li > a:active,
+	.nav-justified > li > a:active,
+	.navbar-inverse .nav-justified > .li > a:focus {
+		background-color: #d5dde5;
+	}
+	
+	.navbar-inverse {
+		background-color: #272A2E;
+	}
+	
+	.navbar-top {
+		background-color: #151718;
+	}
+	
+	#page {
+		background-color: #808080;
+	}
+	
+	.panel-default  {
+		border-color: #484848;
+	}
+	
+</style>

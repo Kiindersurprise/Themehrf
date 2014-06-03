@@ -1,14 +1,14 @@
 body {
 	background-color: #FEFEFE;
-	background: url("images/shen.png") bottom left no-repeat,
-	url("images/zed.png") bottom right no-repeat ;
+	background: url("../images/shen.png") bottom left no-repeat,
+	url("../images/zed.png") bottom right no-repeat ;
 	max-width: 100%;
 	s
 }
 
 @font-face {
     font-family: 'policenavbar';
-    src: url("fonts/Aero.ttf");
+    src: url("../fonts/Aero.ttf");
  
 }
 
@@ -116,7 +116,7 @@ body {
 
 header {
 	padding: 8px 0 76px;
-	background-image: url("images/header2.png");
+	background-image: url("../images/header2.png");
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: bottom center;
@@ -157,7 +157,7 @@ header img {
 }
 
 #copyright {
-	background-image: url("images/footer.png");
+	background-image: url("../images/footer.png");
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: bottom center;
