@@ -1,8 +1,8 @@
 <style type="text/css" >
 	body {
-		background-color: ;
-		background: url("../images/shen.png") bottom left no-repeat,
-	url("../images/zed.png") bottom right no-repeat ;
+		background-color: ; 
+		background: url("../images/bf4g.png") bottom left no-repeat, /* Image sur les cotés */
+	url("../images/bf4d.png") bottom right no-repeat ;
 	}
 	
 	.navbar-inverse .nav-justified > .active > a,
@@ -17,19 +17,19 @@
 	}
 	
 	.navbar-inverse {
-		background-color: #272A2E;
+		background-color: #272A2E; /* Couleur de fond navbar d'en bas*/
 	}
 	
 	.navbar-top {
-		background-color: #151718;
+		background-color: #151718; /* Couleur de fond navbar d'en haut*/
 	}
 	
 	#page {
-		background-color: #808080;
+		background-color: #808080; /* Couleur de fond page principale*/
 	}
 	
 	.panel-default  {
-		border-color: #484848;
+		border-color: #484848; /* Couleur des bordures des blocks panel*/
 	}
 	
 </style>

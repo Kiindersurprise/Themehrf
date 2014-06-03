@@ -9,7 +9,7 @@
 	<title>Theme HRF</title>
 	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/smartnoti.style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="../css/smartnoti.style.css" type="text/css" media="screen">
 	<script src="../js/jquery.js" type="text/javascript"></script>
 	<script src="../js/bootstrap.js" type="text/javascript"></script>
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -20,8 +20,8 @@
         <![endif]-->
 <style type="text/css" >
 	body {
-		background-color: ;
-		background: url("../images/bf4g.png") bottom left no-repeat,
+		background-color: ; 
+		background: url("../images/bf4g.png") bottom left no-repeat, /* Image sur les cotés */
 	url("../images/bf4d.png") bottom right no-repeat ;
 	}
 	
@@ -37,19 +37,19 @@
 	}
 	
 	.navbar-inverse {
-		background-color: #272A2E;
+		background-color: #272A2E; /* Couleur de fond navbar d'en bas*/
 	}
 	
 	.navbar-top {
-		background-color: #151718;
+		background-color: #151718; /* Couleur de fond navbar d'en haut*/
 	}
 	
 	#page {
-		background-color: #808080;
+		background-color: #808080; /* Couleur de fond page principale*/
 	}
 	
 	.panel-default  {
-		border-color: #484848;
+		border-color: #484848; /* Couleur des bordures des blocks panel*/
 	}
 	
 </style>
@@ -304,7 +304,7 @@
 										<div class="panel-heading">
 											<h4 class="panel-title">
 
-										<a id="note_1" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										<a id="note_3" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 
 										  Mise à jour :
 
@@ -434,9 +434,9 @@ ts3v_display.init(ts3v_url_1, 962546, 100);
 	$(document).ready(function(){
 		$("#ts3viewer_962546").hide();
 
-		$("#note_1").smartNotification({
-			mainTitle: 'Vous avez reçu un message',
-			mainContent: 'Voila le jquery c\'est easy<br>',
+		$("#note_3").smartNotification({
+			mainTitle: 'Test Info Importante',
+			mainContent: 'Abebiboblu<br>',
 			hiddenContent: 'Lorem ipsum dolor sit amet, consectetur adipi scing elit. Ut blanditim perdiet dolor,a mentum tortor aliquam vitae ipsum dolor.Lorem ipsum dolor sit amet, consectetur adipi scing elit. Ut blanditim perdiet dolor,a mentum tortor aliquam vitae ipsum dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit imperdiet dolor,a fermentum tortor aliquam vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit imperdiet dolor,a fermentum tortor aliquam vitae.Lorem ipsum dolor sit amet, consectetur adipi scing elit. Ut blanditim perdiet dolor,a mentum tortor aliquam vitae ipsum dolor.Lorem ipsum dolor sit amet, consectetur adipi scing elit. Ut blanditim perdiet dolor,a mentum tortor aliquam vitae ipsum dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit imperdiet dolor,a fermentum tortor aliquam vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit imperdiet dolor,a fermentum tortor aliquam vitae. '
 		});
 	});
