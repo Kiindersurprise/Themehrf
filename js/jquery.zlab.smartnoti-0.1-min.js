@@ -24,7 +24,7 @@
 			$("<div id='case_press'></div>").appendTo($body)
 		};
 		if (!$('#general_overlay').length) {
-			$("<div id='general_overlay'><audio id='bepp_on' preload='auto'><source src='sound/3beeps.ogg' type='audio/ogg'><source src='sound/3beeps.mp3' type='audio/mp3'></audio></div>").appendTo($body);
+			$("<div id='general_overlay'><audio id='bepp_on' preload='auto'><source src='sound/beep.ogg' type='audio/ogg'><source src='sound/beep.mp3' type='audio/mp3'></audio></div>").appendTo($body);
 			$body.on('click.noteOverlay', '#general_overlay', function () {
 				var genThis = $(this).siblings('[data-case]');
 				removeOverCase(genThis, 'yes')
