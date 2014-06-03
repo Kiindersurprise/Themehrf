@@ -1,0 +1,25 @@
+<a href="#" target="_blank"><table width="100%" style="font-size: 80% !important;">
+				<tbody><tr class="sgcount">
+					<td width="33%" style="text-align:center; font-size: 300%; font-weight: 600; color:#9A9A9A;"><span class="x">Loading</span></td>
+					<td width="33%" style="text-align:center; font-size: 300%; font-weight: 600; color:rgb(139, 197, 63);"><span class="y">Loading</span></td>
+					<td width="33%" style="text-align:center; font-size: 300%; font-weight: 600; color:rgb(98, 167, 227);"><span class="z">Loading</span></td>
+				</tr> 
+					<tr>
+					<td style="text-align:center;font-weight: 600; color:#9A9A9A;">MEMBRES</td>
+					<td style="text-align:center;font-weight: 600; color:rgb(139, 197, 63);">EN JEU</td>
+					<td style="text-align:center;font-weight: 600; color:rgb(98, 167, 227);">EN LIGNE</td>
+				</tr>
+							</tbody>
+		</table></a>
+		<script>
+			$.ajax({
+				type: "POST",
+				url: "sg_ajax.php",
+				data: "gid=" + "'.$blok['content'].'",
+				success: function(data){
+					$(".x").hide().html(data.x).fadeIn();
+					$(".y").hide().html(data.y).fadeIn();
+					$(".z").hide().html(data.z).fadeIn();
+				}
+			});
+		</script>';
