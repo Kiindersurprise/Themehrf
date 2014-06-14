@@ -85,7 +85,7 @@ Version: 1.0
 
 .tab .sep {color:#414141}
 
-.tab a.open, .tab a.close2 {
+.tab a.open, .tab a.close {
 	height: 20px;
 	line-height: 20px !important;
 	padding-left: 30px !important;
@@ -97,15 +97,14 @@ Version: 1.0
 }
 
 .tab a.open {background: url(../images/bt_open.png) no-repeat left 0;}
-.tab a.close2 {background: url(../images/bt_close.png) no-repeat left 0;}
+.tab a.close {background: url(../images/bt_close.png) no-repeat left 0;}
 .tab a:hover.open {background: url(../images/bt_open.png) no-repeat left -19px;}
-.tab a:hover.close2 {background: url(../images/bt_close.png) no-repeat left -19px;}
+.tab a:hover.close {background: url(../images/bt_close.png) no-repeat left -19px;}
 
 /* sliding panel */
 #toppanel {
-    position: absolute;   /*Panel will overlap  content */
+    position: fixed;   /*Panel will overlap  content */
     /*position: relative;*/   /*Panel will "push" the content down */
-    top: 0;
     width: 100%;
     z-index: 999;
     text-align: center;
@@ -115,7 +114,7 @@ Version: 1.0
 
 #panel {
 	width: 100%;
-	height: 230px;
+	height: 270px;
 	color: #999999;
 	background: #272727;
 	overflow: hidden;

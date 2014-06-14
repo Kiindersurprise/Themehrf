@@ -551,6 +551,17 @@ ts3v_display.init(ts3v_url_1, 962546, 100);
 	   }
 	});
 
+	$(window).scroll(function() {
+	   if ($(window).scrollTop() > 0 && $(window).scrollTop() <= 142) {
+		   $('#toppanel').css("position", "absolute");
+		   $('#toppanel').removeClass("affix-top");
+	   }
+	   if ($(window).scrollTop() > 142 || $(window).scrollTop() == 0) {
+		  $('#toppanel').css("position", "fixed");
+		  $('#toppanel').addClass("affix-top");
+	   }
+	});
+
 	$(document).ready(function () {
 	    $("#ts3viewer_962546").hide();
 
