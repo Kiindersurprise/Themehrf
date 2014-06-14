@@ -186,3 +186,16 @@ header img {
   z-index: 9000;
 }
 
+#nav-fixed.affix {
+  -webkit-animation: slideIn .6s;
+  -moz-animation: slideIn .6s;
+  -ms-animation: slideIn .6s;
+  animation: slideIn .6s;
+}
+#nav-fixed.affix-top > div{
+  -webkit-animation: slideOut .3s;
+  -moz-animation: slideOut .3s;
+  -ms-animation: slideOut .3s;
+  animation: slideOut .3s;
+}
+
