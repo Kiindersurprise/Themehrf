@@ -174,3 +174,9 @@ header img {
 #carousel-example-generic {
 	width: 66%;
 }
+
+.absent
+{
+	opacity : 0.5;
+}
+
