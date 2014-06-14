@@ -180,3 +180,9 @@ header img {
 	opacity : 0.5;
 }
 
+#nav-fixed {
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+}
+
