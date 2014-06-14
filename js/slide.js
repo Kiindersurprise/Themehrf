@@ -7,7 +7,7 @@ $(document).ready(function() {
 	});	
 	
 	// Collapse Panel
-	$("#close").click(function(){
+	$("#close2").click(function(){
 		$("div#panel").slideUp("slow");	
 	});		
 	

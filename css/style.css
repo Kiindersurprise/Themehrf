@@ -76,6 +76,7 @@ body {
 }
 
 .navbar {
+	min-height: inherit;
 	margin-bottom: 0;
 }
 
@@ -107,7 +108,12 @@ body {
 }
 
 .nav > li > a {
-	padding: 13px 25px;
+	
+	padding: 15px 25px;
+}
+
+.navbar-top .nav-justified > li > a {
+		padding: 8px 25px;
 }
 
 #blason {
