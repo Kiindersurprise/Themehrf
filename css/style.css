@@ -158,7 +158,9 @@ header img {
 	
 }
 
-
+.carousel {
+	top : 7px;
+}
 
 #copyright {
 	background-image: url("../images/footer.png");
