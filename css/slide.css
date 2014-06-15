@@ -27,7 +27,7 @@ Version: 1.0
 	height: 42px;
 	position: relative;
     top: 0;
-    z-index: 999;
+    z-index: 3;
 }
 
 .tab ul.login {

@@ -109,11 +109,23 @@ body {
 
 .nav > li > a {
 	
-	padding: 15px 25px;
+	padding: 10px 25px;
 }
 
 .navbar-top .nav-justified > li > a {
-		padding: 8px 25px;
+		padding: 6px 25px;
+}
+
+.alert {
+	padding: 6px;
+}
+
+.panel {
+	margin-bottom: 15px;
+}
+
+.panel-heading {
+	padding: 7px 15px;
 }
 
 #blason {
@@ -160,6 +172,19 @@ header img {
 
 .carousel {
 	top : 7px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus 
+.nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+	background-color: #484848;
+	color: white;
+}
+
+.nav-tabs.nav-justified > li  {
+	background-color: #A5A5A5;
+}
+.nav-tabs.nav-justified > li > a {
+	color: white;
 }
 
 #copyright {
