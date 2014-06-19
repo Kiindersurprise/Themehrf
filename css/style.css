@@ -2,8 +2,6 @@ body {
 	background-color: #FEFEFE;
 	background: url("../images/shen.png") bottom left no-repeat,
 	url("../images/zed.png") bottom right no-repeat ;
-	max-width: 100%;
-	s
 }
 
 @font-face {
@@ -231,3 +229,4 @@ header img {
   -ms-animation: slideOut .3s;
   animation: slideOut .3s;
 }
+
