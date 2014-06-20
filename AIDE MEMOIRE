@@ -1,0 +1,292 @@
+Lorem 
+------------------------------------------
+Itaque verae amicitiae difficillime reperiuntur in iis qui in honoribus reque publica versantur; ubi enim istum invenias qui honorem amici anteponat suo? Quid? Haec ut omittam, quam graves, quam difficiles plerisque videntur calamitatum societates! Ad quas non est facile inventu qui descendant. Quamquam Ennius recte.
+
+Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit magister adhibitis aliis iam quae essent agenda praedoctis, et adsistebant hinc inde notarii, quid quaesitum esset, quidve responsum, cursim ad Caesarem perferentes, cuius imperio truci, stimulis reginae exsertantis aurem subinde per aulaeum, nec diluere obiecta permissi nec defensi periere conplures.
+
+Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.
+
+Harum trium sententiarum nulli prorsus assentior. Nec enim illa prima vera est, ut, quem ad modum in se quisque sit, sic in amicum sit animatus. Quam multa enim, quae nostra causa numquam faceremus, facimus causa amicorum! precari ab indigno, supplicare, tum acerbius in aliquem invehi insectarique vehementius, quae in nostris rebus non satis honeste, in amicorum fiunt honestissime; multaeque res sunt in quibus de suis commodis viri boni multa detrahunt detrahique patiuntur, ut iis amici potius quam ipsi fruantur.
+
+Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.
+
+
+
+LES ATTRIBUTS NUKED KLAN 
+-----------------------------------------
+
+PREFERENCE GENERAL
+
+
+<?php echo $nuked['name']; ?>     		 	LE TITRE DE VOTRE SITE
+
+<?php echo $nuked['slogan']; ?>				LE SOLGAN DE VOTRE SITE		
+
+<?php echo $nuked['keyword'] ; ?>			LES MOTS CLEES DE VOTRE SITE
+
+<?php echo $nuked['description'] ; ?>		LA DESCRIPTION DE VOTRE SITE
+
+<?php echo $nuked[footmessage]; ?>			AFFICHE LE MESSAGE DE BAS DE PAGE
+
+<?php echo $nuked['version']; ?>			LA VERSION DE NK
+
+<?php echo $nuked['url']; ?>				L ADRESSE DU SITE
+
+<?php echo $nuked['mail']; ?>				L ADRESSE MAIL DU SITE
+
+<?php echo $nuked['theme']; ?>				LE NOM DU THEME
+
+
+LES NEWS
+
+<?php echo "$data[titre]"; ?>				TITRE DE VOS NEWS
+
+<?php echo "$data[texte]"; ?>				LE TEXTE DE VOS NEWS
+
+<?php echo "$data[friend]"; ?>				ENVOYER LA NEWS A UN AMI
+
+<?php echo "$data[auteur]"; ?>				AUTEUR DE LA NEWS		
+
+<?php echo "$data[date]"; ?>				DATE DE PUBLICATION DE LA NEWS
+
+<?php echo "$data[nb_comment]"; ?>			NOMBRE DE COMMENTAIRES DE NEWS
+
+<?php echo "$data[image]"; ?>				L'IMAGE DE CATEGORIE DE VOS NEWS
+
+<?php echo "$data[cat]"; ?>					LA CATEGORIE DE LA NEWS EN TEXTE
+
+
+
+Les Modules
+
+<?php echo $_REQUEST['file']; ?>            affiche titre du module
+
+
+
+LES BLOCS
+
+<?php echo "$block[titre]"; ?>				TITRE DE VOS BLOCK
+
+<?php echo "$block[content]"; ?>			CONTENU DE VOS BLOCK
+
+<?php echo "$_REQUEST[file]"; ?>			LA SECTIONS
+
+------------------------------------------
+Cacher un contenue pour tout le site sauf les news 
+
+<?php if ($_REQUEST['file'] == 'index_site' OR $_REQUEST['file'] == 'News') { ?>
+<?php } ?>
+
+<?php if($_REQUEST["file"] != "Forum") { ?>
+<?php } ?>
+-----------------------------------------
+
+bouton Retour au top
+
+
+<div id="btn_up">
+   <img alt="Retour en haut" title="Retour en haut" src="fleche.png" width="40" />
+</div>
+
+
+#btn_up
+{
+position: fixed;
+bottom: 15px;
+right: 25px;
+cursor: pointer;
+}
+
+ <script type="text/javascript">
+    $(function(){
+        $('#btn_up').click(function() {
+          $('html,body').animate({scrollTop: 0}, 'slow');
+        });
+    });
+    </script>
+-------------------------------------
+before after
+
+#menue:before {  
+    content: " ";    
+   	background:#4b4b4c;
+    width: 16px;  
+    height: 70px;  
+	position:absolute;
+	left:-16px;
+}
+
+#menue:after{  
+    content: " ";   
+   	background:#4b4b4c;
+    width: 16px;
+    height: 70px;  
+	position:absolute;	
+	right:-16px;
+}
+
+
+------------------------------------------
+
+<!-- on fait une inclusion du bloc unique 1 afin de séparer le code du bloc et le code du "theme.php" (faculatif) -->
+					<?php include('themes/neec-dust514/include/slide.php'); ?>
+
+------------------------------------------
+
+créer un lien ADMIN 
+
+<?php if($user[1] > 1) { ?>
+             | <a href="index.php?file=Admin">Admin</a><?php } ?>
+
+
+-----------------------------------------
+
+1 ERE ETAPE ON PLACE :
+
+-----------------------------------------
+
+FONCTION TOP: a placer en debut de page avant <html><head>……
+
+-----------------------------------------
+
+<?php
+
+//pour une demande de partage sur un autre site que http://www.nuked-klan.org faire une demande via le mail 
+
+// la ligne suivante empÃªche l'ouverture du fichier, si on tente d'y accÃ©der par la barre d'adresse du navigateur
+defined("INDEX_CHECK") or die ("<div style=\"text-align: center;\">AccÃ©es interdit</div>");
+
+// le nom (du dossier) de votre theme (permet un renommage facile du thÃ¨me)
+$themeName = 'nom';
+function top()
+{
+
+global $nuked, $op, $file, $page, $user, $themeName, $complet;
+ ?>
+
+-----------------------------------------
+
+FONCTION FOOTER : a placer dans la cellule contenu, là ou doit s'afficher votre structure block news.
+
+
+-----------------------------------------
+
+<?php
+function footer() 
+
+{
+
+global $nuked, $op, $file, $page, $user, $themeName;
+?>	
+
+
+-----------------------------------------
+
+BLOCK GAUCHE: a positioner dans la colonne gauche ou a droite si vous decider de creer un theme avec une seule colone de block situe a droite
+
+<?php get_blok('gauche'); ?>
+
+-----------------------------------------
+
+BLOCK DROIT: a positioner dans la colonne droite ou a gauche si vous decider de creer un theme avec une seule colone de block situer a gauche
+
+<?php get_blok('droite'); ?>
+
+-----------------------------------------
+
+BLOCK CENTRE : a placer dans votre contenu, en general en dessus de fonction footer mais libre a vous de decider ou placer ce block
+
+<?php get_blok('centre'); ?>
+
+
+-----------------------------------------
+
+BLOCK BAS : a placer dans votre contenu , en general en dessous de la fontion footer mais encore une fois libre a vous
+
+<?php get_blok('bas'); ?>
+
+-----------------------------------------
+
+ETAPE 2 ET DERNIERE
+
+-----------------------------------------
+
+
+On place tout ca apres </body></html> tout en bas quoi ;)
+
+-----------------------------------------
+
+
+<?php
+exit();
+}
+?>
+
+<?php
+} 
+// PARTIE NEWS
+function news($data)
+{
+	// on instancie 2 variables. Une pour le posteur et une pour les commentaires.
+	$posted = _NEWSPOSTBY . " <a href=\"index.php?file=Members&amp;op=detail&amp;autor=" . urlencode($data['auteur']) . "\">" . $data['auteur'] . "</a>, " . _THE . "&nbsp;". $data['date'];
+	$comment = "<a href=\"index.php?file=News&amp;op=index_comment&amp;news_id=" . $data['id'] . "\">" . _NEWSCOMMENT . "</a> (" . $data['nb_comment'] . ")";
+    
+	global $nuked, $op, $file, $page, $user, $themeName, $config;
+
+	echo'
+	<h2 class="news-titre">'.$data[titre].'</h2>
+    <div class="news-content">'.$data[texte].'<hr />
+       <span class="span-news">Crée par Kinder le : '.$data[date].' Commentaire ('.$data[nb_comment].')</span>
+    </div>';
+	
+} 
+
+// PARTIE BLOCK GAUCHE
+function block_gauche($block) 
+{
+echo'
+     <h2 class="left-titre">'.$block[titre].'</h2>
+     <div class="left-content">'.$block[content].'</div>';
+} 
+
+// PARTIR BLOCK DROITE
+function block_droite($block) 
+{
+echo'
+     <h2 class="left-titre">'.$block[titre].'</h2>
+     <div class="left-content">'.$block[content].'</div>';
+} 
+
+// PARTIE BLOCK CENTRE
+function block_centre($block) 
+{
+global $nuked, $op, $file, $page, $user;
+echo'
+     <h2 class="centre-titre">'.$block[titre].'</h2>
+     <div class="centre-content">'.$block[content].'</div>';
+}
+
+// PARTIE BLOCK BAS
+function block_bas($block)
+{
+global $nuked, $op, $file, $page, $user;
+echo'
+     <h2 class="centre-titre">'.$block[titre].'</h2>
+     <div class="centre-content">'.$block[content].'</div>';
+}
+
+// FONCTION MODULES
+
+function opentable() 
+{
+global $file, $user;
+
+echo'<h2 class="modules-titre">'.$_REQUEST['file'].'</h2>
+<div id="modules">';
+}
+
+function closetable() 
+{
+echo'</div>';
+}
+?>
