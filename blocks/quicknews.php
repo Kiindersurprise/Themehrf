@@ -1,0 +1,1 @@
+<p>News importante à lire : <a href="#">J'aime les bananes !</a></p>

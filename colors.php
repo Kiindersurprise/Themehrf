@@ -1,13 +1,13 @@
 <?php
-/************************************************
-*	Thème Impact_Nk pour Nuked Klan
-*	Design :  (http://www.best-creative.fr/)
-*	Codage : fce (http://www.best-creative.fr/)
-************************************************/
     defined('INDEX_CHECK') or die;
 
-    $bgcolor1 = $couleur[1];
-    $bgcolor2 = $couleur[2];
-    $bgcolor3 = $couleur[3];
-    $bgcolor4 = $couleur[4];
+    $bgcolor1 = "#cacaca"; // Ne doit pas changer !
+    $bgcolor2 = "#E6E6E6"; // Ne doit pas changer !
+    $bgcolor3 = "#A4A4A4"; // Ne doit pas changer !
+	$bgcolor4 = "#E7B92B";
+	$bgcolor5 = "#ddd";
+	$bgcolor6 = "#222";
+	$bgcolor7 = "#484848";
+	$bgcolor8 = "#484848";
+	$bgcolor9 = "#cacaca";
 ?>

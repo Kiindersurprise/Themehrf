@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'policenavbar';
+    src: url("../fonts/Aero.ttf");
+ 
+}
+
+table {
+font-size: 12px;
+}
+
+#opentableOff{
+	display:none;
+}
+
+#socialcont	 {
+	Float: left;
+	position: fixed;
+	z-index: 3;
+	top: 40%;
+	left: 0px;
+	width: 120px;
+}
+
+.panel-default >.panel-heading {
+	background-color: #484848; 
+	color: white;
+	text-align: center;
+}
+
+.partenaires {
+	position : relative;
+	left : 700px;
+	bottom: 8px;
+}
+
+@media (min-width: 1200px) {
+	#navbar2 {
+		margin-left: 250px;
+	}
+	.block-gauche {
+		padding-top: 130px;
+	}
+	#blason {
+		margin-top: -260px;
+		max-width: 90%;
+	}
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	#navbar2 {
+		margin-left: 200px;
+	}
+	.block-gauche {
+		padding-top: 90px;
+	}
+	#blason {
+		margin-top: -210px;
+		max-width: 90%;
+	}
+	.partenaires {
+	left : 500px;
+	}
+	
+}
+@media (min-width: 768px) and (max-width: 980px) {
+	#navbar2 {
+		margin-left: 0;
+	}
+	.partenaires {
+	left : 289px;
+	}
+}
+@media (max-width: 768px) {
+	#navbar2 {
+		margin-left: 0;
+	}
+}
+
+.navbar {
+	min-height: inherit;
+	margin-bottom: 0;
+}
+
+.navbar-top {
+	background-color: #484848;
+}
+
+.navbar-inverse .nav-justified > li > a {
+		color: white;
+		font-family: policenavbar;
+		font-size: 14px;
+
+}
+
+#navbar2 li a {
+	font-family: policenavbar;
+	border-right: 1px solid white;
+}
+.navbar-inverse .nav-justified > .active > a,
+.navbar-inverse .nav-justified > .active > a:hover,
+.navbar-inverse .nav-justified > .active > a:focus,
+.navbar-inverse .nav-justified > .active > a:active,
+.navbar-inverse .nav-justified > li > a:hover,
+.navbar-inverse .nav-justified > li > a:active,
+.nav-justified > li > a:active,
+.navbar-inverse .nav-justified > .li > a:focus {
+  color: #fff;
+  background-color: #E7B92B;
+}
+
+.nav > li > a {
+	
+	padding: 10px 25px;
+}
+
+.navbar-top .nav-justified > li > a {
+		padding: 6px 25px;
+}
+
+.alert {
+	padding: 3px;
+	margin-bottom: 12px;
+}
+
+.panel {
+	margin-bottom: 10px;
+}
+
+.panel-heading {
+  	font-weight: bold;
+	padding: 3px 15px;
+}
+
+#blason {
+	position: absolute;
+}
+
+header {
+	padding: 8px 0 76px;
+	background-image: url("../images/header2.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: bottom center;
+	background-color: #121B25;
+}
+
+
+header img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page {
+	padding: 10px;
+	background-color: #cacaca;
+	min-height: 896px;
+}
+
+#backgroundcontainer {
+	float: left;
+}
+
+.carousel-indicators {
+	left: 85%
+}
+
+.carousel-indicators .active {
+	background-color: #E7B92B;
+}
+
+.carousel-indicators li {
+	background-color: #C3C1C1;
+	
+}
+
+.carousel {
+	top : 7px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus 
+.nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+	background-color: #484848;
+	color: white;
+}
+
+.nav-tabs.nav-justified > li  {
+	background-color: #A5A5A5;
+}
+.nav-tabs.nav-justified > li > a {
+	color: white;
+}
+
+#copyright {
+	background-image: url("http://www.communaute-hrf.fr/themes/themehrf_main/images/footer.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: bottom center;
+	font-size: 10px;
+	font-style: italic;
+	color: white;
+	height: 35px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.dropdown-menu {
+	left: inherit;
+}
+
+#carousel-example-generic {
+	width: 66%;
+}
+
+.absent
+{
+	opacity : 0.5;
+}
+
+#nav-fixed {
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+}
+
+#nav-fixed.affix {
+  -webkit-animation: slideIn .6s;
+  -moz-animation: slideIn .6s;
+  -ms-animation: slideIn .6s;
+  animation: slideIn .6s;
+}
+#nav-fixed.affix-top > div{
+  -webkit-animation: slideOut .3s;
+  -moz-animation: slideOut .3s;
+  -ms-animation: slideOut .3s;
+  animation: slideOut .3s;
+}
+
+@media (min-width: 1200px) {
+	#stream {
+		width: 40%;
+	}
+	#blockfixe {
+	}
+	#blockmobile {
+	position: fixed;
+	display: inline-block;
+	vertical-align: top;
+	width: 275px;
+	}
+	#calendar {
+		width: 59%;
+	}
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	#stream {
+		width: 48%;
+	}
+	#blockfixe {
+	}
+	#blockmoblie {
+	position: fixed;
+	}
+	#calendar {
+		width: 51%;
+	}
+	
+}
+@media (min-width: 768px) and (max-width: 980px) {
+	#stream {
+		width: 47.1%;
+		margin-left: 200px;
+	}
+	#blockmobile {
+	position: inherit;
+	}
+	#calendar {
+		width: 100%;
+	}
+}
+
+div#topics {
+padding-right: 0px;
+}
+
+div#stream {
+padding-right: 0px;
+}
+
